@@ -27,7 +27,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <footer>© {new Date().getFullYear()}, JMG Photography</footer>
+      <footer style={{ textAlign: "center" }}>
+        © {new Date().getFullYear()}, JMG Photography
+      </footer>
     </>
   )
 }

@@ -13,11 +13,12 @@ const NavigationBarStyle = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  
-  @media (max-width: 500px) {
+
+  @media (max-width: 499px) {
     .deskTop {
-    display: none;
+      display: none;
     }
+  }
 `
 
 const NavigationBar = () => {
