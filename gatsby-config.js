@@ -3,6 +3,7 @@ module.exports = {
     title: `JMG Photography`,
     description: `Photographer. Graphic Designer. Illustrator. Editor based in Los Angeles California`,
     author: `Daniel Jimenez`,
+    siteUrl: `https://www.jmg13.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
