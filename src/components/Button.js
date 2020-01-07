@@ -9,10 +9,17 @@ const Button = styled.button`
   padding: 10px;
   width: 150px;
   border: ${variables.accentColor} 2px solid;
+  margin: 0 10px;
+
+  &:hover {
+    background-color: ${variables.accentColor};
+    color: ${variables.darkColor};
+    border: ${variables.darkColor} 2px solid;
+  }
 `
 
 const button = props => {
-  return <Button>Hello</Button>
+  return <Button>{props.children}</Button>
 }
 
 export default button

@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import styled from "styled-components"
+import variables from "../../../variables"
 
 const LinkItem = styled.li`
-  background-color: pink;
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -15,13 +15,12 @@ const LinkItem = styled.li`
 
   a {
     text-decoration: none;
-    backgroundcolor: yellow;
     height: 100%;
     padding: 0 15px;
   }
 
   &:hover {
-    background-color: yellow;
+    color: ${variables.accentColor};
   }
 
   @media screen and (max-width: 499px) {

@@ -1,6 +1,7 @@
 import React from "react"
 import NavigationItems from "../NavigationItems"
 import styled from "styled-components"
+import variables from "../../../variables"
 
 const SideDrawer = styled.div`
   position: fixed;
@@ -11,7 +12,7 @@ const SideDrawer = styled.div`
   left: 0;
   top: 8vh;
   margin: 0 auto;
-  background-color: green;
+  background-color: ${variables.greyColor};
   padding: 32px 0 0 0;
   transition: transform 0.5s ease-in;
   display: flex;
@@ -19,6 +20,7 @@ const SideDrawer = styled.div`
   justify-content: center;
   align-content: center;
   margin: 0 auto;
+  z-index: 100;
 
   @media (min-width: 500px) {
     display: none;

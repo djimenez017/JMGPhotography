@@ -13,7 +13,6 @@ const LinkList = styled.ul`
     justify-content: center;
     padding: 0;
     height: 50%;
-    background: orange;
     top: 8vh;
     padding-right: 20px;
   }
@@ -22,9 +21,10 @@ const LinkList = styled.ul`
 const navigationItems = () => {
   return (
     <LinkList>
-      <NavigationItem to={"/"}>Home</NavigationItem>
-      <NavigationItem to={"page-2"}>Gallery</NavigationItem>
-      <NavigationItem to={"page-2"}>Contact</NavigationItem>
+      <NavigationItem to={"/#home"}>Home</NavigationItem>
+      <NavigationItem to={"/#services"}>Services</NavigationItem>
+      <NavigationItem to={"/#about"}>About</NavigationItem>
+      <NavigationItem to={"/#contact"}>Contact</NavigationItem>
     </LinkList>
   )
 }
