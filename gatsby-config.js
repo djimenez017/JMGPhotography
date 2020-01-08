@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-theme-gallery`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
