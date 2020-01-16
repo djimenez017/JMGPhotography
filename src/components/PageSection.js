@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Section = styled.div`
   min-height: 100vh;
   background-color: ${props => props.color || "pink"};
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: ${props => props.flexDirection || "column"};
   justify-content: center;

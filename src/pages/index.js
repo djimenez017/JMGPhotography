@@ -11,7 +11,7 @@ import Card from "../components/Card"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <PageSection color="orange" id="home">
+    <PageSection id="home">
       <h1>JMG Photography</h1>
       <p>Phototgrapher. Graphic Designer. Illustrator. Editor</p>
       <Row>
@@ -19,7 +19,7 @@ const IndexPage = () => (
         <Button>Contact</Button>
       </Row>
     </PageSection>
-    <PageSection color="green" id="services">
+    <PageSection id="services">
       <h1>Services</h1>
       <Row>
         <Card>
@@ -39,9 +39,10 @@ const IndexPage = () => (
         </Card>
       </Row>
     </PageSection>
-    <PageSection color="pink" id="about">
+    <PageSection id="about">
+      <h1>About me:</h1>
+
       <Card>
-        <h1>About me:</h1>
         <p>
           My Name is Jose, I also go by "Jay" or "JMG" which are my initials.
           I've always had a fascination for cameras, all types of cameras. From
@@ -60,8 +61,8 @@ const IndexPage = () => (
         </p>
       </Card>
     </PageSection>
-    <PageSection color="blue" id="contact">
-      Contact
+    <PageSection id="contact">
+      <h1>Contact</h1>
     </PageSection>
   </Layout>
 )
