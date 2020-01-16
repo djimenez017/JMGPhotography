@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import NavigationItem from "./NavigationItem/NavigationItem"
 import styled from "styled-components"
@@ -21,10 +22,10 @@ const LinkList = styled.ul`
 const navigationItems = () => {
   return (
     <LinkList>
-      <NavigationItem to={"/#home"}>Home</NavigationItem>
-      <NavigationItem to={"/#services"}>Services</NavigationItem>
-      <NavigationItem to={"/#about"}>About</NavigationItem>
-      <NavigationItem to={"/#contact"}>Contact</NavigationItem>
+      <NavigationItem to="#home">Home</NavigationItem>
+      <NavigationItem to="#services">Services</NavigationItem>
+      <NavigationItem to="#about">About</NavigationItem>
+      <NavigationItem to="#contact">Contact</NavigationItem>
     </LinkList>
   )
 }
