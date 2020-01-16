@@ -23,19 +23,22 @@ const IndexPage = () => (
       <h1>Services</h1>
       <Row>
         <Card>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aut
-          repellendus, voluptatum quisquam rem culpa eligendi eius reprehenderit
-          fuga nobis nemo ipsum ad pariatur nam porro consequatur magni ab hic?
+          <ul>
+            <p>Photography</p>
+            <li>Weddings</li>
+            <li>Baby Photoshoots</li>
+            <li>Vehicle Photoshoots</li>
+            <li>Baptisms</li>
+            <li>Nature</li>
+            <li>Birthday Parties</li>
+          </ul>
         </Card>
         <Card>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aut
-          repellendus, voluptatum quisquam rem culpa eligendi eius reprehenderit
-          fuga nobis nemo ipsum ad pariatur nam porro consequatur magni ab hic?
-        </Card>
-        <Card>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aut
-          repellendus, voluptatum quisquam rem culpa eligendi eius reprehenderit
-          fuga nobis nemo ipsum ad pariatur nam porro consequatur magni ab hic?
+          <ul>
+            <p>Branding/Art</p>
+            <li>Logos</li>
+            <li>Tatoo Design</li>
+          </ul>
         </Card>
       </Row>
     </PageSection>
