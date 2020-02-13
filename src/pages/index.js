@@ -7,6 +7,7 @@ import Row from "../components/RowItems"
 import SocialMediaIcons from "../components/SocialMediaIcons"
 import PageSection from "../components/PageSection"
 import Card from "../components/Card"
+import Form from "../components/Form"
 
 const IndexPage = () => (
   <Layout>
@@ -21,10 +22,11 @@ const IndexPage = () => (
     </PageSection>
     <PageSection id="services">
       <h1>Services</h1>
-      <Row>
+
         <Card>
+            <h2>Photography</h2>
           <ul>
-            <p>Photography</p>
+
             <li>Weddings</li>
             <li>Baby Photoshoots</li>
             <li>Vehicle Photoshoots</li>
@@ -32,15 +34,14 @@ const IndexPage = () => (
             <li>Nature</li>
             <li>Birthday Parties</li>
           </ul>
-        </Card>
-        <Card>
+
+          <h2>Branding/Art</h2>
           <ul>
-            <p>Branding/Art</p>
+          
             <li>Logos</li>
             <li>Tatoo Design</li>
           </ul>
         </Card>
-      </Row>
     </PageSection>
     <PageSection id="about">
       <h1>About me:</h1>
@@ -66,6 +67,7 @@ const IndexPage = () => (
     </PageSection>
     <PageSection id="contact">
       <h1>Contact</h1>
+      <Form />
     </PageSection>
   </Layout>
 )
