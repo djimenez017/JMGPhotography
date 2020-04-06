@@ -6,16 +6,12 @@ import styled from "styled-components"
 
 const LinkList = styled.ul`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   @media screen and (max-width: 499px) {
     align-content: center;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
-    height: 50%;
-    top: 8vh;
-    padding-right: 20px;
   }
 `
 

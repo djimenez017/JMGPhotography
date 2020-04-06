@@ -9,14 +9,12 @@ const LinkItem = styled.li`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
 
   a {
     text-decoration: none;
     height: 100%;
-    padding: 0 15px;
+    padding: 20px 0;
   }
 
   &:hover {

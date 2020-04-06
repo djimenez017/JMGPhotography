@@ -7,17 +7,20 @@ import SideDrawer from "../Navigation/NavigationItems/HamburgerMenu/SideDrawer"
 import variables from "../variables"
 
 const NavigationBarStyle = styled.nav`
-  height: 8vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  background: black;
+  width: 25%;
   position: fixed;
-  background-color: ${variables.darkColor};
   top: 0;
   left: 0;
   right: 0;
+
+  h1 {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px 0;
+  }
 
   @media (max-width: 499px) {
     .deskTop {
