@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,8 +9,9 @@ import SocialMediaIcons from "../components/SocialMediaIcons"
 import PageSection from "../components/PageSection"
 import Card from "../components/Card"
 import Form from "../components/Form"
+import InstagramSection from "../components/InstagramSection/instagramSection"
 
-const IndexPage = () => (
+const IndexPage = props => (
   <Layout>
     <SEO title="Home" />
     <PageSection id="home">
@@ -21,27 +23,9 @@ const IndexPage = () => (
       </Row>
     </PageSection>
     <PageSection id="services">
-      <h1>Services</h1>
+      <h1>Latest on Instagram</h1>
 
-        <Card>
-            <h2>Photography</h2>
-          <ul>
-
-            <li>Weddings</li>
-            <li>Baby Photoshoots</li>
-            <li>Vehicle Photoshoots</li>
-            <li>Baptisms</li>
-            <li>Nature</li>
-            <li>Birthday Parties</li>
-          </ul>
-
-          <h2>Branding/Art</h2>
-          <ul>
-          
-            <li>Logos</li>
-            <li>Tatoo Design</li>
-          </ul>
-        </Card>
+      <InstagramSection data={props.data} />
     </PageSection>
     <PageSection id="about">
       <h1>About me:</h1>
@@ -73,3 +57,19 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    allInstaNode {
+      edges {
+        node {
+          id
+          timestamp
+          username
+          likes
+          original
+        }
+      }
+    }
+  }
+`

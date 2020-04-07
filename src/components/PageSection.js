@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Section = styled.div`
   min-height: 100vh;
-  background-color: red;
+
   width: 100%;
   display: flex;
   flex-direction: ${props => props.flexDirection || "column"};

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap");
 
 /*
 font-family: 'Julius Sans One', sans-serif;
@@ -10,8 +10,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   padding: 0;
-  color: #eeeeee;
-  font-family: "Monda", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -38,10 +37,15 @@ main {
 }
 
 a {
-  color: #eeeeee;
+  color: #a0a0a0;
   text-decoration: none;
 }
 
 a:hover {
-  color: #7971ea;
+  color: #ffffff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
 }
