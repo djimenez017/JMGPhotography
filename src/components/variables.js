@@ -5,6 +5,8 @@ const variables = {
   accentColor: "#7971ea",
 
   padding: "20px",
+
+  font: `"Poppins", sans-serif`,
 }
 
 export default variables

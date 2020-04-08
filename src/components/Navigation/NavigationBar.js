@@ -22,7 +22,10 @@ const NavigationBarStyle = styled.nav`
     padding: 20px 0;
   }
 
-  @media (max-width: 499px) {
+  @media (max-width: 1000px) {
+    height: 10vh;
+    width: 100%;
+
     .deskTop {
       display: none;
     }

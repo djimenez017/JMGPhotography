@@ -9,16 +9,13 @@ const InstagramContainer = styled.div`
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  overflow: hidden;
 `
 const SingleImage = styled.div`
   margin: 0 auto;
   width: 300px;
   background: white;
   padding: 5px;
-  margin: 3px 30px;
+  margin: 3px 10px;
 
   img {
     width: 100%;
@@ -32,6 +29,7 @@ const SingleImage = styled.div`
 `
 
 const instagramSection = props => {
+  console.log(props.data.allInstaNode.edges)
   const InstagramPosts = props.data.allInstaNode.edges
   const Posts = InstagramPosts.map(post => {
     console.log(post)

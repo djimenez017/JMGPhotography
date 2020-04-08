@@ -19,9 +19,8 @@ const navigationItems = () => {
   return (
     <LinkList>
       <NavigationItem to="#home">Home</NavigationItem>
-      <NavigationItem to="#services">Services</NavigationItem>
       <NavigationItem to="#about">About</NavigationItem>
-      <NavigationItem to="#contact">Contact</NavigationItem>
+      <NavigationItem to="#latest">About</NavigationItem>
     </LinkList>
   )
 }
