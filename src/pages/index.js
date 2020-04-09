@@ -16,7 +16,7 @@ const IndexPage = props => (
       <h1>JMG Photography</h1>
       <p>Phototgrapher. Graphic Designer. Illustrator. Editor</p>
       <Row>
-        <Button>About Me</Button>
+        <Button>Gallery</Button>
         <Button>Contact</Button>
       </Row>
     </PageSection>
@@ -32,7 +32,6 @@ const IndexPage = props => (
 
     <PageSection id="latest">
       <h1>Latest on Instagram</h1>
-
       <InstagramSection data={props.data} />
     </PageSection>
   </Layout>
@@ -42,14 +41,14 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    allInstaNode {
+    allInstaNode(limit: 6) {
       edges {
         node {
           id
-          timestamp
-          username
-          likes
           original
+          username
+          caption
+          likes
         }
       }
     }

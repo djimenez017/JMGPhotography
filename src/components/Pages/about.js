@@ -9,6 +9,10 @@ const AboutContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `
 const AboutMe = styled.div`
   width: 100%;
@@ -39,6 +43,10 @@ const about = props => {
           start experimenting with Graphic Design. Graphic Design allowed me to
           bridge my two passions to allow me to create Logos, Illustrations, and
           even Tattoos.
+          <br />
+          <br />
+          Have any questions? Or would you like me to capture you next event?
+          Fill out the form and i will get in touch with you.
         </p>
       </AboutMe>
       <FormStyle>

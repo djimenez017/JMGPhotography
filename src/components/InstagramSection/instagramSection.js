@@ -5,27 +5,36 @@ import styled from "styled-components"
 const InstagramContainer = styled.div`
   box-sizing: border-box;
   width: 90%;
-  height: 90vh;
+  height: 80vh;
   overflow: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
 `
 const SingleImage = styled.div`
   margin: 0 auto;
   width: 300px;
   background: white;
-  padding: 5px;
-  margin: 3px 10px;
+  padding: 10px;
+  margin: 5px 5px;
 
   img {
     width: 100%;
-    height: 230px;
+    height: 220px;
   }
 
   p {
     margin: 0;
     color: black;
   }
+`
+const PostContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 3px;
 `
 
 const instagramSection = props => {
@@ -36,7 +45,12 @@ const instagramSection = props => {
     return (
       <SingleImage key={post.node.id}>
         <img src={post.node.original} />
-        <p>Likes: {post.node.likes}</p>
+        <PostContent>
+          <a href="https://www.instagram.com/jmg.photography/">
+            <p>@{post.node.username}</p>
+          </a>
+          <p>Likes: {post.node.likes}</p>
+        </PostContent>
       </SingleImage>
     )
   })

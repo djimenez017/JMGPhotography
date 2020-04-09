@@ -12,14 +12,14 @@ const Hamburger = styled.div`
 `
 
 const Hide = styled.div`
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 1000px) {
     display: none;
   }
 `
 
 const hamburger = props => {
   return (
-    <Hide onClick={props.clicked}>
+    <Hide onClick={props.onClick}>
       <Hamburger></Hamburger>
       <Hamburger></Hamburger>
       <Hamburger></Hamburger>

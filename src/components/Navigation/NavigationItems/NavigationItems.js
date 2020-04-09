@@ -8,10 +8,9 @@ const LinkList = styled.ul`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 499px) {
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
+  @media screen and (max-width: 1000px) {
+    text-align: right;
+    padding-right: 30px;
   }
 `
 
@@ -19,8 +18,9 @@ const navigationItems = () => {
   return (
     <LinkList>
       <NavigationItem to="#home">Home</NavigationItem>
+      <NavigationItem to="#">Gallery</NavigationItem>
       <NavigationItem to="#about">About</NavigationItem>
-      <NavigationItem to="#latest">About</NavigationItem>
+      <NavigationItem to="#latest">Latest Instagram</NavigationItem>
     </LinkList>
   )
 }
