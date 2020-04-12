@@ -19,6 +19,9 @@ const AboutMe = styled.div`
   text-align: left;
   box-sizing: border-box;
   padding: 20px;
+  @media (max-width: 1000px) {
+    height: 100vh;
+  }
 `
 const FormStyle = styled.div`
   width: 100%;

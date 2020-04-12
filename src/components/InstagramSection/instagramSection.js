@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const InstagramContainer = styled.div`
   box-sizing: border-box;
-  width: 90%;
+  width: 95%;
   height: 80vh;
   overflow: auto;
   display: flex;
@@ -14,6 +14,7 @@ const InstagramContainer = styled.div`
 const SingleImage = styled.div`
   margin: 0 auto;
   width: 300px;
+  max-height: 300px;
   background: white;
   padding: 10px;
   margin: 5px 5px;

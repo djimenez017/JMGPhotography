@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 const Section = styled.div`
   min-height: 100vh;
-
   width: 100%;
   display: flex;
   flex-direction: ${props => props.flexDirection || "column"};
@@ -14,15 +13,15 @@ const Section = styled.div`
   position: relative;
   right: 0;
   top: 0;
+
+  @media (max-width: 1000px) {
+    margin-top: 10px;
+  }
 `
 
 const pageSection = props => {
   return (
-    <Section
-      id={props.id}
-      color={props.color}
-      flexDirection={props.flexDirection}
-    >
+    <Section id={props.id} flexDirection={props.flexDirection}>
       {props.children}
     </Section>
   )

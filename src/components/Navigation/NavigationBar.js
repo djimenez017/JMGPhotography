@@ -37,13 +37,13 @@ const NavigationBarStyle = styled.nav`
 `
 
 const NavigationBar = () => {
-  const [toggle, setToggle] = useState(true)
-  console.log(toggle)
+  const [toggle, setToggle] = useState(false)
+
   return (
     <NavigationBarStyle>
       <h1>JMG Photography</h1>
       <Hamburger onClick={() => setToggle(!toggle)} />
-      <SideDrawer toggle={toggle} />
+      <SideDrawer toggle={toggle} onClick={() => setToggle(!toggle)} />
       <nav className={"deskTop"}>
         <NavigationItems />
       </nav>

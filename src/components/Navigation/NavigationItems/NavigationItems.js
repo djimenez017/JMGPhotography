@@ -1,6 +1,4 @@
 import React from "react"
-import scrollTo from "gatsby-plugin-smoothscroll"
-
 import NavigationItem from "./NavigationItem/NavigationItem"
 import styled from "styled-components"
 

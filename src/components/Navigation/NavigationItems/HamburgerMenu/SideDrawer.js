@@ -23,6 +23,13 @@ const SideDrawer = styled.div`
     transition: 350ms;
   }
 
+  @media (min-width: 400px) {
+    &.open {
+      left: 20vw;
+      transition: 450ms;
+    }
+  }
+
   @media (min-width: 1000px) {
     display: none;
   }
@@ -36,12 +43,10 @@ const sidedrawer = props => {
     : (attachedClasses = ["sideDrawer"])
 
   return (
-    <SideDrawer className={attachedClasses.join(" ")}>
+    <SideDrawer className={attachedClasses.join(" ")} onClick={props.onClick}>
       <NavigationItems />
     </SideDrawer>
   )
 }
 
 export default sidedrawer
-
-//{attachedClasses.join(" ")}

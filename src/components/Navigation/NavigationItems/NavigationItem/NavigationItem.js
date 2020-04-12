@@ -31,7 +31,9 @@ const LinkItem = styled.li`
 
 const navigationItem = props => (
   <LinkItem>
-    <Link to={props.to}>{props.children}</Link>
+    <Link to={props.to} onClick={props.onClick}>
+      {props.children}
+    </Link>
   </LinkItem>
 )
 
