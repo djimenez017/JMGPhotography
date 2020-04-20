@@ -42,7 +42,6 @@ const instagramSection = props => {
   console.log(props.data.allInstaNode.edges)
   const InstagramPosts = props.data.allInstaNode.edges
   const Posts = InstagramPosts.map(post => {
-    console.log(post)
     return (
       <SingleImage key={post.node.id}>
         <img src={post.node.original} />
@@ -56,7 +55,11 @@ const instagramSection = props => {
     )
   })
 
-  return <InstagramContainer>{Posts}</InstagramContainer>
+  return (
+    <>
+      <InstagramContainer>{Posts}</InstagramContainer>
+    </>
+  )
 }
 
 export default instagramSection

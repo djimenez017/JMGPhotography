@@ -19,19 +19,15 @@ const SideDrawer = styled.div`
   z-index: 400;
 
   &.open {
-    left: 60vw;
+    left: 40vw;
     transition: 350ms;
   }
 
-  @media (min-width: 400px) {
+  @media (max-width: 400px) {
     &.open {
-      left: 20vw;
+      left: 13vw;
       transition: 450ms;
     }
-  }
-
-  @media (min-width: 1000px) {
-    display: none;
   }
 `
 

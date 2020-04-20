@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,21 +17,21 @@ const IndexPage = props => (
       <p>Phototgrapher. Graphic Designer. Illustrator. Editor</p>
       <Row>
         <Button>Gallery</Button>
-        <Button>Contact</Button>
+        <Button>
+          <Link to="#about">Contact</Link>
+        </Button>
       </Row>
     </PageSection>
 
     {/* MAIN */}
 
     <PageSection id="about">
-      <h1>Contact</h1>
       <About />
     </PageSection>
 
     {/* ABOUT */}
 
     <PageSection id="latest">
-      <h1>Latest on Instagram</h1>
       <InstagramSection data={props.data} />
     </PageSection>
   </Layout>
