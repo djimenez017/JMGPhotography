@@ -18,7 +18,7 @@ const ImageGallery = styled.div`
     width: calc(100% / 3);
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 490px) {
     top: 10vh;
 
     img {
