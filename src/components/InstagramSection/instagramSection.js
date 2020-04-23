@@ -40,7 +40,6 @@ const PostContent = styled.div`
 `
 
 const instagramSection = props => {
-  //console.log(props.data.allInstaNode.edges)
   const InstagramPosts = props.data.allInstaNode.edges
   const Posts = InstagramPosts.map(post => {
     return (

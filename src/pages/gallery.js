@@ -66,7 +66,6 @@ const GalleryPage = props => {
   const AllImages = props.data.allImageSharp.nodes
 
   const Images = AllImages.map(image => {
-    console.log(showModal)
     return (
       <img
         key={image.id}
