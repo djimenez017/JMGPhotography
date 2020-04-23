@@ -11,12 +11,17 @@ import About from "../components/Pages/about"
 
 const IndexPage = props => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      title="Home"
+      description="Hello there, I am a freelance photographer based in Los Angeles, CA. If you have any questions or you would like me to capture your next event. Send me an email to contact@jmg13.com and i will reach out to you with more details."
+    />
     <PageSection id="home">
       <h1>JMG Photography</h1>
       <p>Phototgrapher. Graphic Designer. Illustrator. Editor</p>
       <Row>
-        <Button>Gallery</Button>
+        <Button>
+          <Link to="/gallery">Gallery</Link>
+        </Button>
         <Button>
           <Link to="#about">Contact</Link>
         </Button>

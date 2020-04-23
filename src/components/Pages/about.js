@@ -10,10 +10,9 @@ const AboutContainer = styled.div`
   justify-content: space-between;
   padding: 20px;
 
-
   @media (max-width: 1000px) {
     flex-direction: column;
-   
+
     h2 {
       margin-top: 50px;
     }
@@ -25,7 +24,6 @@ const AboutMe = styled.div`
   box-sizing: border-box;
   padding: 20px;
   @media (max-width: 1000px) {
-
   }
 `
 const FormStyle = styled.div`
@@ -36,7 +34,7 @@ const about = props => {
   return (
     <AboutContainer>
       <AboutMe>
-  <h2>About me</h2>
+        <h2>About me</h2>
         <p>
           My Name is Jose, I also go by "Jay" or "JMG" which are my initials.
           I've always had a fascination for cameras, all types of cameras. From
@@ -59,7 +57,7 @@ const about = props => {
         </p>
       </AboutMe>
       <FormStyle>
-        <Form />
+        <Form id="#contact" />
       </FormStyle>
     </AboutContainer>
   )

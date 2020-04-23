@@ -4,13 +4,13 @@ import styled from "styled-components"
 import variables from "../../../variables"
 
 const SideDrawer = styled.div`
-  top: 10vh;
+  top: 7vh;
   right: 0;
   bottom: 0;
   left: 130vw;
   position: fixed;
   display: flex;
-  background-color: ${variables.darkColor};
+  background: ${variables.darkColor};
   padding: 32px 0 0 0;
   align-content: center;
   justify-content: center;
@@ -41,6 +41,7 @@ const sidedrawer = props => {
   return (
     <SideDrawer className={attachedClasses.join(" ")} onClick={props.onClick}>
       <NavigationItems />
+      <footer>© {new Date().getFullYear()}, JMG Photography</footer>
     </SideDrawer>
   )
 }

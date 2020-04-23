@@ -1,6 +1,7 @@
 import React from "react"
 
 import styled from "styled-components"
+import variables from "../variables"
 
 const InstagramContainer = styled.div`
   box-sizing: border-box;
@@ -14,7 +15,7 @@ const InstagramContainer = styled.div`
 const SingleImage = styled.div`
   margin: 0 auto;
   width: 300px;
-  max-height: 300px;
+  max-height: 260px;
   background: white;
   padding: 10px;
   margin: 5px 5px;
@@ -46,8 +47,12 @@ const instagramSection = props => {
       <SingleImage key={post.node.id}>
         <img src={post.node.original} />
         <PostContent>
-          <a href="https://www.instagram.com/jmg.photography/">
-            <p>@{post.node.username}</p>
+          <a href="https://www.instagram.com/jmg.photography/" target="_blank">
+            <p
+              style={{ color: `${variables.accentColor}`, fontWeight: "bold" }}
+            >
+              @{post.node.username}
+            </p>
           </a>
           <p>Likes: {post.node.likes}</p>
         </PostContent>

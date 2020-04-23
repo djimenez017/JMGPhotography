@@ -14,14 +14,16 @@ const ImageGallery = styled.div`
   display: flex;
   flex-flow: row wrap;
   position: relative;
+  overflow-x:hidden;
+
  
 
   img {
     width: calc(100% / 3);
     grayscale(100%);
-	filter: grayscale(70%);
-	-webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
+  	filter: grayscale(70%);
+  	-webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
   }
@@ -29,7 +31,7 @@ const ImageGallery = styled.div`
   img:hover {
     z-index: 700;
   	-webkit-transition: .1s ease-in-out;
-	transition: .1s ease-in-out;
+  	transition: .1s ease-in-out;
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     -webkit-transform: scale(1.2);
@@ -39,12 +41,12 @@ const ImageGallery = styled.div`
   }
 
   @media (max-width: 490px) {
-    top: 10vh;
+    top: 7vh;
 
     img {
       width: calc(100% / 2);
       grayscale(0);
-	filter: grayscale(0);
+	    filter: grayscale(0);
     }
 
     img:hover {
@@ -54,7 +56,7 @@ const ImageGallery = styled.div`
   }
 
   @media (max-width: 1000px) {
-    top: 10vh;
+    top: 7vh;
   }
 `
 
@@ -77,7 +79,10 @@ const GalleryPage = props => {
 
   return (
     <Layout>
-      <SEO title="Photo Gallery" />
+      <SEO
+        title="Photo Gallery"
+        description="A showcase of the many photographs i have taken. Would you like me to shoot your next event? Send me an email to contact@jmg13.com"
+      />
       <ImageGallery>{Images}</ImageGallery>
     </Layout>
   )

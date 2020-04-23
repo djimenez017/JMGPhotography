@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 
 import styled from "styled-components"
 import NavigationItems from "./NavigationItems/NavigationItems"
@@ -23,7 +24,7 @@ const NavigationBarStyle = styled.nav`
   }
 
   @media (max-width: 1000px) {
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -41,12 +42,15 @@ const NavigationBar = () => {
 
   return (
     <NavigationBarStyle>
-      <h1>JMG Photography</h1>
+      <h1>
+        <Link to="/">JMG Photography</Link>
+      </h1>
       <Hamburger onClick={() => setToggle(!toggle)} />
       <SideDrawer toggle={toggle} onClick={() => setToggle(!toggle)} />
       <nav className={"deskTop"}>
         <NavigationItems />
       </nav>
+      <footer>© {new Date().getFullYear()}, JMG Photography</footer>
     </NavigationBarStyle>
   )
 }
