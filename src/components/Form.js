@@ -40,10 +40,15 @@ const form = () => {
       </Hidden>
       {/* this section is for the spam handler in netlify */}
       <LabelStyle>Your Name:</LabelStyle>
-      <InputStyle type="text" name="name" placeholder="John Smith" />
+      <InputStyle type="text" name="name" placeholder="John Smith" required />
       <br />
       <LabelStyle>Your Email:</LabelStyle>
-      <InputStyle type="email" name="email" placeholder="email@domain.com" />
+      <InputStyle
+        type="email"
+        name="email"
+        placeholder="email@domain.com"
+        required
+      />
       <br />
       <LabelStyle>Date:</LabelStyle>
       <InputStyle type="date" name="date" placeholder="mm/dd/yyyy" />
@@ -52,6 +57,7 @@ const form = () => {
       <TextAreaStyle
         name="message"
         placeholder="Please enter any information regtarding the event. (Ex. Guest count, location, or other)"
+        required
       ></TextAreaStyle>
       <br />
       <Button type="submit">Send</Button>

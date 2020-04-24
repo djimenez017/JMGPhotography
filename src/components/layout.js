@@ -8,11 +8,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import ReactGA from "react-ga"
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  useEffect(() => {
+    ReactGA.initialize("UA-164533502-1")
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
