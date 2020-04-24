@@ -30,9 +30,14 @@ const TextAreaStyle = styled.textarea`
   height: 100px;
 `
 
-const form = () => {
+const form = props => {
   return (
-    <FormStyle name="contact" method="POST" data-netlify="true">
+    <FormStyle
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
       {/* this section is for the spam handler in netlify */}
       <Hidden>
         <LabelStyle>Don’t fill this out if you're human:</LabelStyle>
