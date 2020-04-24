@@ -34,7 +34,7 @@ const form = props => {
   return (
     <FormStyle
       name="contact"
-      method="POST"
+      method="post"
       data-netlify="true"
       netlify-honeypot="bot-field"
     >
