@@ -37,6 +37,7 @@ const form = props => {
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      hidden
     >
       {/* this section is for the spam handler in netlify */}
       <Hidden>
