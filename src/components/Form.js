@@ -37,7 +37,6 @@ const form = props => {
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      hidden
     >
       {/* this section is for the spam handler in netlify */}
       <Hidden>
@@ -46,7 +45,7 @@ const form = props => {
       </Hidden>
       {/* this section is for the spam handler in netlify */}
       <LabelStyle>Your Name:</LabelStyle>
-      <InputStyle type="text" name="name" placeholder="John Smith" required />
+      <InputStyle type="hidden" name="name" value="contact" required />
       <br />
       <LabelStyle>Your Email:</LabelStyle>
       <InputStyle
