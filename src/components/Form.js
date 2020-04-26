@@ -7,7 +7,7 @@ import variables from "../components/variables"
 const Hidden = styled.p`
   display: none;
 `
-const FormStyle = styled.form`
+const Form = styled.form`
   width: 60%;
   min-width: 300px;
   margin: 0 auto;
@@ -32,11 +32,12 @@ const TextAreaStyle = styled.textarea`
 
 const form = props => {
   return (
-    <FormStyle
+    <Form
       name="contact"
       method="post"
       data-netlify="true"
       netlify-honeypot="bot-field"
+      data-netlify-honeypot="bot-field"
     >
       {/* this section is for the spam handler in netlify */}
       <Hidden>
@@ -55,9 +56,9 @@ const form = props => {
         required
       />
       <br />
-      <LabelStyle>Date:</LabelStyle>
+      {/* <LabelStyle>Date:</LabelStyle>
       <InputStyle type="date" name="date" placeholder="mm/dd/yyyy" />
-      <br />
+      <br /> */}
       <LabelStyle>Message:</LabelStyle>
       <TextAreaStyle
         name="message"
@@ -66,7 +67,7 @@ const form = props => {
       ></TextAreaStyle>
       <br />
       <Button type="submit">Send</Button>
-    </FormStyle>
+    </Form>
   )
 }
 
