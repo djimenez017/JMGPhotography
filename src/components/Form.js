@@ -38,6 +38,7 @@ const form = props => {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="contact" />
       {/* this section is for the spam handler in netlify */}
       <Hidden>
         <LabelStyle>Don’t fill this out if you're human:</LabelStyle>
@@ -45,7 +46,7 @@ const form = props => {
       </Hidden>
       {/* this section is for the spam handler in netlify */}
       <LabelStyle>Your Name:</LabelStyle>
-      <InputStyle type="hidden" name="name" value="contact" required />
+      <InputStyle type="text" name="name" placeholder="John Smith" required />
       <br />
       <LabelStyle>Your Email:</LabelStyle>
       <InputStyle
