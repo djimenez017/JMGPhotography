@@ -57,7 +57,7 @@ const about = props => {
         </p>
       </AboutMe>
       <FormStyle>
-        <Form id="#contact" />
+        <Form />
       </FormStyle>
     </AboutContainer>
   )
