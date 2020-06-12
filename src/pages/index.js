@@ -49,11 +49,12 @@ export const query = graphql`
     allInstaNode(limit: 6) {
       edges {
         node {
-          id
-          original
-          username
           caption
+          id
           likes
+          original
+          timestamp
+          username
         }
       }
     }
