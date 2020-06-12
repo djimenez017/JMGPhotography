@@ -1,10 +1,10 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
-import Modal from "../components/modal"
+// import Modal from "../components/modal"
 
 const ImageGallery = styled.div`
   box-sizing: border-box;
@@ -61,19 +61,18 @@ const ImageGallery = styled.div`
 `
 
 const GalleryPage = props => {
-  const [showModal, setShowModal] = useState(true)
-
+  // const [showModal, setShowModal] = useState(false)
+  // console.log(showModal)
   const AllImages = props.data.allImageSharp.nodes
 
+  // const showModalHandler = props => {
+  //   setShowModal(!showModal)
+  //   const modal = setShowModal
+  //   modal ? <Modal /> : null
+  // }
+
   const Images = AllImages.map(image => {
-    return (
-      <img
-        key={image.id}
-        src={image.fluid.src}
-        alt=""
-        onClick={() => setShowModal(!showModal)}
-      />
-    )
+    return <img key={image.id} src={image.fluid.src} alt="" />
   })
 
   return (
