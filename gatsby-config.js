@@ -33,7 +33,7 @@ module.exports = {
       },
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `jmg.photography`,
+        username: `1530669957`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
