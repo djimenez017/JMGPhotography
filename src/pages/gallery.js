@@ -62,7 +62,6 @@ const ImageGallery = styled.div`
 
 const GalleryPage = props => {
   // const [showModal, setShowModal] = useState(false)
-  // console.log(showModal)
   const AllImages = props.data.allImageSharp.nodes
 
   // const showModalHandler = props => {

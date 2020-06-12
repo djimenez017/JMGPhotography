@@ -42,7 +42,6 @@ const PostContent = styled.div`
 const instagramSection = props => {
   const InstagramPosts = props.data.allInstaNode.edges
   const Posts = InstagramPosts.map(post => {
-    console.log(post)
     return (
       <SingleImage key={post.node.id}>
         <img src={post.node.original} alt={post.node.caption} />

@@ -15,7 +15,6 @@ const ModalStyle = styled.div`
 `
 
 const modal = props => {
-  console.log(props)
   return <ModalStyle>Hello</ModalStyle>
 }
 
