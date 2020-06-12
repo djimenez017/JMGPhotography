@@ -44,8 +44,24 @@ const IndexPage = props => (
 
 export default IndexPage
 
+// export const query = graphql`
+//   query {
+//     allInstaNode(limit: 6) {
+//       edges {
+//         node {
+//           caption
+//           id
+//           likes
+//           original
+//           timestamp
+//           username
+//         }
+//       }
+//     }
+//   }
+// `
 export const query = graphql`
-  query {
+  {
     allInstaNode(limit: 6) {
       edges {
         node {
