@@ -1,12 +1,12 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
 import Row from "../components/RowItems"
 import PageSection from "../components/PageSection"
-import InstagramSection from "../components/InstagramSection/instagramSection"
+//import InstagramSection from "../components/InstagramSection/instagramSection"
 import About from "../components/Pages/about"
 
 const IndexPage = props => (
@@ -36,16 +36,16 @@ const IndexPage = props => (
 
     {/* ABOUT */}
 
-    <PageSection id="latest">
+    {/* <PageSection id="latest">
       <InstagramSection data={props.data} />
-    </PageSection>
+    </PageSection> */}
   </Layout>
 )
 
 export default IndexPage
 
 // export const query = graphql`
-//   query {
+//   {
 //     allInstaNode(limit: 6) {
 //       edges {
 //         node {
@@ -60,19 +60,3 @@ export default IndexPage
 //     }
 //   }
 // `
-export const query = graphql`
-  {
-    allInstaNode(limit: 6) {
-      edges {
-        node {
-          caption
-          id
-          likes
-          original
-          timestamp
-          username
-        }
-      }
-    }
-  }
-`

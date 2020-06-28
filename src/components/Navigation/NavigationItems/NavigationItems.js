@@ -18,7 +18,7 @@ const navigationItems = () => {
       <NavigationItem to="#home">Home</NavigationItem>
       <NavigationItem to="/gallery">Gallery</NavigationItem>
       <NavigationItem to="#about">About</NavigationItem>
-      <NavigationItem to="#latest">Latest Instagram</NavigationItem>
+      {/* <NavigationItem to="#latest">Latest Instagram</NavigationItem> */}
     </LinkList>
   )
 }
