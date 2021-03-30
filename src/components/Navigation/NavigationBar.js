@@ -10,7 +10,7 @@ const NavigationBarStyle = styled.nav`
   box-sizing: border-box;
   height: 100vh;
   background: black;
-  width: 25%;
+  width: 20%;
   position: fixed;
   top: 0;
   left: 0;

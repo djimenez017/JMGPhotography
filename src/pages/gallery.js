@@ -10,34 +10,29 @@ const ImageGallery = styled.div`
   box-sizing: border-box;
   margin: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-flow: row wrap;
   position: relative;
-  overflow-x:hidden;
-
- 
+  overflow-x: hidden;
 
   img {
     width: calc(100% / 3);
-    grayscale(100%);
-  	filter: grayscale(70%);
-  	-webkit-transition: .1s ease-in-out;
-    transition: .1s ease-in-out;
+    filter: grayscale(70%);
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- 
   }
 
   img:hover {
     z-index: 700;
-  	-webkit-transition: .1s ease-in-out;
-  	transition: .1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
- 
   }
 
   @media (max-width: 490px) {
@@ -45,8 +40,7 @@ const ImageGallery = styled.div`
 
     img {
       width: calc(100% / 2);
-      grayscale(0);
-	    filter: grayscale(0);
+      filter: grayscale(0);
     }
 
     img:hover {
@@ -61,14 +55,7 @@ const ImageGallery = styled.div`
 `
 
 const GalleryPage = props => {
-  // const [showModal, setShowModal] = useState(false)
   const AllImages = props.data.allImageSharp.nodes
-
-  // const showModalHandler = props => {
-  //   setShowModal(!showModal)
-  //   const modal = setShowModal
-  //   modal ? <Modal /> : null
-  // }
 
   const Images = AllImages.map(image => {
     return <img key={image.id} src={image.fluid.src} alt="" />

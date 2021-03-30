@@ -15,9 +15,9 @@ const LinkList = styled.ul`
 const navigationItems = () => {
   return (
     <LinkList>
-      <NavigationItem to="#home">Home</NavigationItem>
+      <NavigationItem to="/#home">Home</NavigationItem>
       <NavigationItem to="/gallery">Gallery</NavigationItem>
-      <NavigationItem to="#about">About</NavigationItem>
+      <NavigationItem to="/#about">About</NavigationItem>
       {/* <NavigationItem to="#latest">Latest Instagram</NavigationItem> */}
     </LinkList>
   )
